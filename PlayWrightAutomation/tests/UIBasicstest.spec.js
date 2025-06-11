@@ -71,29 +71,7 @@
    
    ])//new page is opened
 
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
   
-    
-
-
-
-
-
    const  text = await newPage.locator(".red").textContent();
     const arrayText = text.split("@")
     const domain =  arrayText[1].split(" ")[0]
@@ -102,20 +80,4 @@
     console.log(await page.locator("#username").textContent());
 
 
-
-
-    
-    
-
-
-
-
-
  })
-
-
-
- 
-
-
-
