@@ -1,6 +1,6 @@
  const {test, expect} = require('@playwright/test');
 // js is synchronous so we need to use async befor function and use await to execute test step by step
-
+// if we use page fixture we don't have to declear the browser and newpage here
 
  //test.use({ browserName: 'webkit'});
  test('@Web Browser Context-Validating Error login', async ({browser})=>      //insted function() for this we can write ()=> for this anonymous function
