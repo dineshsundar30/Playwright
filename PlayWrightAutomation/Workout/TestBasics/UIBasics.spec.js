@@ -8,6 +8,7 @@ const context = await browser.newContext();
 const page =  await context.newPage();
 
 const signIn = page.locator("#signInBtn");                    //insted of using a locator again and again we can declear globally and reuse that
+const cardTitles =  page.locator(".card-body a");
 
 await page.goto('https://rahulshettyacademy.com/loginpagePractise/');
 console.log(await page.title());
@@ -23,9 +24,12 @@ await page.locator('input#password').fill("");
 await page.locator('input#password').fill("learning");
 await signIn.click();                                              // reusing the locator insted of -> await page.locator("#signInBtn").click(); 
 
-console.log(await page.locator(".card-body a").first().textContent());   //--> to work with multiple element's the 
-console.log(await page.locator(".card-body a").nth(1).textContent());
+console.log(await cardTitles.first().textContent());   //--> to work with multiple element's the 
+console.log(await cardTitles.nth(1).textContent());
 
+const allTitles = await cardTitles.allTextContents();
+   
+console.log(allTitles);
 }
 
 
