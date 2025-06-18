@@ -16,14 +16,14 @@ await page.locator('input#username').fill('rahulshettyacademy');
 await page.locator('input#password').fill('akfakfaad');
 
 await page.locator("input[id='signInBtn']").click();
-console.log(await page.locator("[style*='block']").textContent());
+console.log(await page.locator("[style*='block']").textContent());      //---> extracting the test form 
 await expect(page.locator("[style*='block']")).toContainText('Incorrect')
 
 await page.locator('input#password').fill("");
 await page.locator('input#password').fill("learning");
 await signIn.click();                                              // reusing the locator insted of -> await page.locator("#signInBtn").click(); 
 
-console.log(await page.locator(".card-body a").first().textContent());
+console.log(await page.locator(".card-body a").first().textContent());   //--> to work with multiple element's the 
 console.log(await page.locator(".card-body a").nth(1).textContent());
 
 }
