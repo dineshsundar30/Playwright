@@ -12,7 +12,7 @@ test('@Webst Client App login', async ({ page }) => {
    await page.locator("#userEmail").fill(email);
    await page.locator("#userPassword").fill("Iamking@000");
    await page.locator("[value='Login']").click();
-   await page.waitForLoadState('networkidle');
+   await page.waitForLoadState('networkidle');         //--> if that website is useing the services we can use this so that all the services all callled in network successfully
    await page.locator(".card-body b").first().waitFor();
    const titles = await page.locator(".card-body b").allTextContents();
    console.log(titles); 
