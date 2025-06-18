@@ -1,6 +1,7 @@
 1. npm init playwright  --> to initiate the playwright project 
 
 2. npx playwright test --> this will run the all test in your directory 
+   npx playwright test test/Basics2.spec.js  --> this for run that specfic file
 
 3. if you use only in that test npx playwright test will run only those test 
 for example:
