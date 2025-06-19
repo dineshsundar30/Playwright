@@ -27,7 +27,7 @@ await signIn.click();                                              // reusing th
 console.log(await cardTitles.first().textContent());               //--> to work with multiple element's the 
 console.log(await cardTitles.nth(1).textContent());
 
-const allTitles = await cardTitles.allTextContents();
+const allTitles = await cardTitles.allTextContents();            //--> this allTextContents() don't have auto wait like click so if you use this you will get empty array
    
 console.log(allTitles);
 }
