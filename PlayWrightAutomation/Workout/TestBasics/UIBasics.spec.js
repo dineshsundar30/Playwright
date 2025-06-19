@@ -1,4 +1,6 @@
 const {test,expect} = require('@playwright/test');  
+// js is synchronous so we need to use async befor function and use await to execute test step by step
+// if we use page fixture we don't have to declear the browser and newpage here
 
 test.only('Browser context playwright Test', async ({browser})=>                  //function() insted of this we can use ()=> for anonymous function
 {
