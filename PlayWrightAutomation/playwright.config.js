@@ -17,7 +17,7 @@ const config = {
   use: {
 
     browserName : 'chromium',
-    headless : true,
+    headless : false,            //if this is false it's will fun always open a browser while executions
     screenshot : 'on',
     trace : 'on',//off,on
     
