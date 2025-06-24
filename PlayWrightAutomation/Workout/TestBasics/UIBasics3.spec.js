@@ -28,4 +28,4 @@ const {test,expect} = require('@playwright/test');
             //useing this we can also check the password is masked or not if that element type is password that is masked correctly
     await expect(documentLink).toHaveAttribute("class","blinkingText");  
 
-})
+});
