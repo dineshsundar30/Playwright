@@ -22,7 +22,10 @@ const {test,expect} = require('@playwright/test');
     await expect( page.locator("#terms")).toBeChecked();
 
     await page.locator("#terms").uncheck();                               // this .uncheck() will check it's unchecked or not but we can use for directly to assert 
-    expect( await page.locator("#terms").isChecked()).toBeFalsy();                  // but we can use .isChecked() it will return true or false then we can use that assert with .toBeFalsy()
+    expect( await page.locator("#terms").isChecked()).toBeFalsy();                  // but we can use .isChecked() it will return true or false then we can use that assert with .toBeFalsy() 
+    
+    // this .toHaveAttribute will use to check that attribute and attribute value have that for that particular element 
+            //useing this we can also check the password is masked or not if that element type is password that is masked correctly
     await expect(documentLink).toHaveAttribute("class","blinkingText");  
 
 })
