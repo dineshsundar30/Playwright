@@ -1,6 +1,6 @@
 test('@Child windows hadl', async ({browser})=>
  {
-    const context = await browser.newContext();
+    const context = await browser.newContext();                          // if we need to handle the page opening this browser fixture is recomended
     const page =  await context.newPage();                                         
     const userName = page.locator('#username');
     await page.goto("https://rahulshettyacademy.com/loginpagePractise/");
