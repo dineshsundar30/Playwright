@@ -22,7 +22,7 @@ await page.locator("input[id='signInBtn']").click();
 console.log(await page.locator("[style*='block']").textContent());               //---> extracting the text form element
 await expect(page.locator("[style*='block']")).toContainText('Incorrect')        //--> assertions
 
-await page.locator('input#password').fill("");
+await page.locator('input#password').fill("");                                 // here await page.locator('input#password').clear() we can use this also
 await page.locator('input#password').fill("learning");
 await signIn.click();                                              // reusing the locator insted of -> await page.locator("#signInBtn").click(); 
 
