@@ -5,6 +5,7 @@ test('@Web Client App login', async ({ page }) => {
    await page.locator("#userPassword").type("Iamking@000");
    await page.locator("[value='Login']").click();
    await page.waitForLoadState('networkidle');          //--> if that website is useing the services we can use this so that all the services all callled in network successfully
+                                                                  //sometimes this await page.waitForLoadState('networkidle') will not work so we can use the below one
    await page.locator(".card-body b").first().waitFor();  //--> other method to wait for that to load .waitFor() will work for only single element so here we are using .first()
    const titles = await page.locator(".card-body b").allTextContents();
    console.log(titles); 
