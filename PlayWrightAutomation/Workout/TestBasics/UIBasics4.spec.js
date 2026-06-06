@@ -19,6 +19,7 @@ test('@Child windows hadl', async ({browser})=>
     const domain =  arrayText[1].split(" ")[0]
     console.log(domain);
     await page.locator("#username").fill(domain);                             // and if you want to access the main page use page.
-    console.log(await page.locator("#username").textContent());
+    console.log(await page.locator("#username").inputValue());          // Here we should use only inputValue() beacue textContent() will return the text which is attached to the DOM while opening,
+                                                                            // -Here we are getting the value from the user so textContent() will give you the empty O/P
  
  })
