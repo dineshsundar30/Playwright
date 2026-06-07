@@ -34,7 +34,7 @@ test('@Webst Client App login', async ({ page }) => {
    await page.locator("text=Checkout").click();
 
    await page.locator("[placeholder*='Country']").pressSequentially("ind");            //page.locator("[placeholder*='Country']").pressSequentially("ind", { delay: 150 }); Here,if the application 
-                                                                                                   // server is slow due to heavy traffic. In such cases, a delay of 150 milliseconds is introduced between each key press.
+                                                                                    // server is slow due to heavy traffic. In such cases, a delay of 150 milliseconds is introduced between each key press.
    const dropdown = page.locator(".ta-results");
    await dropdown.waitFor();
    const optionsCount = await dropdown.locator("button").count();
