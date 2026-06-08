@@ -14,3 +14,5 @@ y
 5.  also we can configure that head settings in config file like --> headless : false,
 
 6. if you want to open a playwright Test runner use   npx playwright test --ui    it will open a test runner
+
+7. npx playwright test test_sample_4.spec.js --debug  --> this will open a playwright inspector it will help us to debug our test step by step
