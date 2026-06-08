@@ -10,5 +10,7 @@ test.only('focus this test', async ({ page }) => {
 });
 
 4.  npx playwright test --headed --> this will run script with head mode by default in playwrite is headless
-
+y
 5.  also we can configure that head settings in config file like --> headless : false,
+
+6. if you want to open a playwright Test runner use   npx playwright test --ui    it will open a test runner
