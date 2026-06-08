@@ -15,4 +15,5 @@ y
 
 6. if you want to open a playwright Test runner use   npx playwright test --ui    it will open a test runner
 
-7. npx playwright test test_sample_4.spec.js --debug  --> this will open a playwright inspector it will help us to debug our test step by step
+7. npx playwright test test_sample_4.spec.js --debug  --> this will open a playwright inspector it will help us to debug our test step by step 
+and we can change the locator in runtime and check,also it will help ur find a locator too.
