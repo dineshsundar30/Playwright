@@ -17,3 +17,5 @@ y
 
 7. npx playwright test test_sample_4.spec.js --debug  --> this will open a playwright inspector it will help us to debug our test step by step 
 and we can change the locator in runtime and check,also it will help ur find a locator too.
+
+8. npx playwright codegen https://rahulshettyacademy.com/angularpractice/  --> this codegen will open the link and create a script based on your actions 
