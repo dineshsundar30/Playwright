@@ -14,7 +14,7 @@ test("@Web Popup validations",async({page})=>
     await page.locator("#hide-textbox").click();
     await expect(page.locator("#displayed-text")).toBeHidden();
    // await page.pause();
-    page.on('dialog',dialog => dialog.accept());
+    page.on('dialog',dialog => dialog.accept());      // or we can dismiss() to cancel that
     await page.locator("#confirmbtn").click();
     await page.locator("#mousehover").hover();
     const framesPage = page.frameLocator("#courses-iframe");
