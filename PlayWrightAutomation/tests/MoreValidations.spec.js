@@ -18,7 +18,7 @@ test("@Web Popup validations",async({page})=>
     await page.locator("#confirmbtn").click();
     await page.locator("#mousehover").hover();
     const framesPage = page.frameLocator("#courses-iframe");
-    await framesPage.locator("li a[href*='lifetime-access']:visible").click();
+    await framesPage.locator("li a[href*='lifetime-access']:visible").click();      // :visiable -- in playwirght let say if you have 2 elemnt with the locator and one is visible and one is notvisible means you use this make unique
      const textCheck =await framesPage.locator(".text h2").textContent();
     console.log(textCheck.split(" ")[1]);
 
