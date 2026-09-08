@@ -22,8 +22,8 @@ await page.locator("input[id='signInBtn']").click();
 console.log(await page.locator("[style*='block']").textContent());               //---> extracting the text form element
 await expect(page.locator("[style*='block']")).toContainText('Incorrect')        //--> assertions
 
-await page.locator('input#password').fill("");                                 // here await page.locator('input#password').clear() we can use this also
-await page.locator('input#password').fill("learning");
+await page.locator('input#password').clear();                                 // here await page.locator('input#password').clear() we can use this also
+await page.locator('input#password').fill("Learning@830$3mK2");
 await signIn.click();                                              // reusing the locator insted of -> await page.locator("#signInBtn").click(); 
 
 console.log(await cardTitles.first().textContent());               //--> to work with multiple element's the where need to take the specfie element from locator
