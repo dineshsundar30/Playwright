@@ -19,3 +19,11 @@ y
 and we can change the locator in runtime and check,also it will help ur find a locator too.
 
 8. npx playwright codegen https://rahulshettyacademy.com/angularpractice/  --> this codegen will open the link and create a script based on your actions 
+
+
+
+====================================================================================================================================================================================
+
+
+
+playwright will support CSS, XPATH - mostly first preferences is CSS
