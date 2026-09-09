@@ -27,3 +27,4 @@ and we can change the locator in runtime and check,also it will help ur find a l
 
 
 playwright will support CSS, XPATH - mostly first preferences is CSS
+await page.pause();                            //this will use to pause the browser and open playwright inspector
