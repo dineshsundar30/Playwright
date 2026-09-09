@@ -14,7 +14,7 @@ const {test,expect} = require('@playwright/test');
     
     await page.locator(".radiotextsty").last().click();  // this .last() will select the last element 
     await page.locator("#okayBtn").click();
-   // await page.pause();                            //this will use to pause the browser
+   // await page.pause();                            //this will use to pause the browser and open playwright inspector
     
     console.log(await page.locator(".radiotextsty").last().isChecked());  // in playwright this will just use to print the true or false 
     await expect(page.locator(".radiotextsty").last()).toBeChecked();     // .toBeChecked() we can use this for assertions whether it's checked
