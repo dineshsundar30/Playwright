@@ -39,7 +39,7 @@ test("sample test 3",async ({browser})=>{
 
 //============================================================================================================================================
 
-test("sample test 4",async ({browser})=>{
+test.only("sample test 4",async ({browser})=>{
 
     const context = await browser.newContext()
     const page= await context.newPage()

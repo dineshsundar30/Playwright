@@ -1,3 +1,5 @@
+const {test,expect} = require('@playwright/test');  
+
 test('@Child windows hadl', async ({browser})=>
  {
     const context = await browser.newContext();                          // if we need to handle the page opening this browser fixture is recomended
