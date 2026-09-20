@@ -11,7 +11,7 @@ test('Playwright Special locators', async ({ page }) => {
   await page.goto('https://rahulshettyacademy.com/angularpractice/');
 
   // getByLabel
-  await page.getByLabel('Check me out if you Love IceCreams!').click();
+  await page.getByLabel('Check me out if you Love IceCreams!').click();          // getByLable only work if that lable and input box wrapped or linked the id refrence else this will not work 
 
   await page.getByLabel('Employed').check();
 
