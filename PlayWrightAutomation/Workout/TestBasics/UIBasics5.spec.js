@@ -49,7 +49,7 @@ test.only("sample test 4",async ({browser})=>{
     const user_Password = page.locator("#userPassword")
     const Login = page.locator("#login")
 
-    const productName = "ZARA COAT 3"
+    const productName = "ZARA COAT 3"                        //  await page.locator('.card-body').filter({ hasText: 'ZARA COAT 3' })  we can filter and find the locator
     const productItems = page.locator("div.card-body")
     const Cart = page.locator("li [routerlink*='cart']")
 
